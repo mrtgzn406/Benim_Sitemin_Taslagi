@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/* todo  Genel tüm sayfaya uygulanan css kodları başlangıç*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+html body {
+  font-size: 1.6rem;
+}
+html body nav {
+  /* 
+  !todo nav (menü) kısmı başlangıç */
+  height: 7rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+html body nav .site_icon {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: rgb(0, 231, 58);
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+html body nav .site_icon:hover {
+  color: rgb(235, 255, 59);
+}
+html body nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+}
+html body nav ul li {
+  flex: 0 0 9rem;
+}
+html body nav ul li a {
+  letter-spacing: 0.5px;
+  font-weight: bolder !important;
+}
+html body nav.mobil_versiyon {
+  background-color: rgb(0, 0, 0);
+  /* todo Bu "mobil_versiyon" class'ı normalde index.html sayfasında olmayan bir class'tır. Çünkü bu class "customized.js" sayfasında javascript kodlarıyla yazılmış koşullara göre çalışacaktır ve eğer koşul karşılanıyorsa bu class'ı nav etiketine ekleyecektir, çalışmıyorsa eklemeyecektir. Böylelikle bu class içindeki css kodları yalnızca koşulu karşılarsa nav etiketine uygulanacaktır.
+
+  ! not:  Bu class kullanıcı sayfayı aşağı kaydırır kaydırmaz normalde saydam ve siyah renkle olan menünün saydamlığını almak ve tamamen siyah bir menü bırakmak için yazılmıştır. */
+}
+html body nav.mobil_versiyon .site_icon {
+  font-size: 2rem;
+}
+html body header.backImage {
+  /* todo header kısmı başlangıç*/
+  background-image: url(../../img/header.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+html body .mySection {
+  padding: 6rem 0;
+}
+html body .mySection .s-heading {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+html body .mySection .s-subheading {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+}
+html body section#portfolio .row .card .card-body a {
+  position: relative;
+  display: block;
+}
+html body section#portfolio .row .card .card-body a .ikon-kapsayici {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: ease-in-out 0.7s;
+}
+html body section#portfolio .row .card .card-body a .ikon-kapsayici:hover {
+  font-size: 5rem;
+  opacity: 1;
+}
+html body .modal .modal-dialog .modal-header {
+  display: flex;
+}
+html body .modal .modal-dialog .modal-header .modal-title {
+  flex-grow: 1;
+  text-align: center;
+}
+html body .modal .modal-dialog .modal-body img {
+  display: block;
+  margin: auto;
+}
+html body .timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+html body .timeline:before {
+  position: absolute;
+  content: "";
+  /* left: $resizing / 2; 
+  Bu ifadeyi sadece sembolik olarak yazdık, böylece bizim Scss dosyasının  içinde kullandığımız $resizing parametresine sahip @mixin fonksiyonunun sitemizin hangi bölümlerini etkilediğini net olarak görebileceğiz. Velhasıl kelam , bu yoruma alınmış $resizing ifadesi fonksiyonun bu seçiciyi de etkilediğini gösterir, nerede yoruma alınmış bir resizing ifadesi görürsek oraya Scss aracılığıyla Css'ten müdahale edilmiş demektir.*/
+  background-color: rgb(192, 192, 192);
+  /* !
+  left: 0;
+  right: 0;
+  height: 2px;
+  Yatay bir çizgi oluşturmak için yukarıdaki 3 satır kodu yazarız. */
+  /* !
+  transform: translate(-50%, -50%);
+  hizalamanın sol üst taraftan değil de, objenin ortasından başlamasını istiyorsak o zaman da bu transform: translate(-50%, -50%); yazarız böylece objemiz gerek x ekseninde gerekse de y ekseninde konumlandırılmaya objenin ortasını merkez kabul ederek başlar. */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  /* ! Dikey bir çizgi oluşturmak için yukarıdaki 3 satır kodu yazarız. */
+}
+html body .timeline li {
+  /*  margin-bottom: $resizing / 2; */
+}
+html body .timeline li::after, html body .timeline li::before {
+  display: table;
+  content: "";
+}
+html body .timeline li .t-panel {
+  /* padding: 0 calc($resizing / 5) 0  calc($resizing + ($resizing * 0.20)); */
+  text-align: left;
+}
+html body .timeline li .t-image {
+  position: absolute;
+  z-index: 10;
+  margin-left: 0;
+  /*
+  width: $resizing;
+  height: $resizing;  
+  */
+  text-align: center;
+  color: white;
+  border: 6px solid rgb(22, 230, 143);
+  border-radius: 100%;
+}
+html body .timeline li .t-image:last-child {
+  background-color: rgb(67, 18, 182);
+  color: rgb(243, 255, 78);
+  display: flex;
+  align-items: center;
+}
+html body #contact {
+  background-image: url(../../img/map.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+}
+
+/* ! Sitenin çeşitli genişliklerde nasıl davranacağını yazdığımız media query kısmıdır. */
+@media (max-width: 768px) {
+  header.backImage {
+    padding-top: 11rem;
+    padding-bottom: 13rem;
+  }
+  /* todo bu kısım header kısmının medium genişlikten önce nasıl davranacağı ile ilgilidir. */
+  nav ul li a {
+    color: black !important;
+    text-align: left !important;
+    /* todo Bu kısım sitemizin menüsünün medium genişlikten önce nasıl davranacağı ile ilgilidir */
+  }
+  nav ul li a.active, nav ul li a:hover {
+    color: orange !important;
+  }
+}
+@media (min-width: 768px) {
+  header.backImage {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+  /* todo Bu kısım header kısmının medium genişlikten sonra nasıl davranacağı ile ilgilidir */
+  nav ul li a {
+    color: white !important;
+    text-align: center;
+    /* todo Bu kısım sitemizin menüsünün medium genişlikten sonra nasıl davranacağı ile ilgilidir */
+  }
+  nav ul li a.active, nav ul li a:hover {
+    color: orange !important;
+  }
+}
+/* Bu kısımdaki media query kodları ise about kısmındaki ekran genişliğine göre değişen boyutlandırmayı yapmak için  yazıldı */
+@media (max-width: 576px) {
+  .timeline:before {
+    left: 50px;
+  }
+  .timeline li {
+    margin-bottom: 50px;
+  }
+  .timeline li .t-panel {
+    padding: 0 20px 0 120px;
+  }
+  .timeline li .t-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .timeline:before {
+    left: 62.5px;
+  }
+  .timeline li {
+    margin-bottom: 62.5px;
+  }
+  .timeline li .t-panel {
+    padding: 0 25px 0 150px;
+  }
+  .timeline li .t-image {
+    width: 125px;
+    height: 125px;
+  }
+  /* .timeline{
+
+       &:before {
+           left: 50% !important;
+
+       }
+       li{
+           min-height: 300px;
+           margin-bottom: 100px;
+           padding: 0;
+
+           .t-panel{
+               border: 5px solid red;
+               float: left;
+               width: 40%;
+               padding: 0 20px 20px 30px;
+               text-align: right;  
+           }
+
+           .t-image{
+               left: 50%;
+               width: 100px;
+               height: 100px;
+               transform: translate(-50%, 0);
+
+           }
+       }
+   } */ /* Bu kısımda bir deneme vardır. */
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .timeline:before {
+    left: 75px;
+  }
+  .timeline li {
+    margin-bottom: 75px;
+  }
+  .timeline li .t-panel {
+    padding: 0 30px 0 180px;
+  }
+  .timeline li .t-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .timeline:before {
+    left: 85px;
+  }
+  .timeline li {
+    margin-bottom: 85px;
+  }
+  .timeline li .t-panel {
+    padding: 0 34px 0 204px;
+  }
+  .timeline li .t-image {
+    width: 170px;
+    height: 170px;
+  }
+}/*# sourceMappingURL=customized.css.map */
