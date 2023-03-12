@@ -58,6 +58,8 @@ html body header.backImage {
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 html body .mySection {
   padding: 6rem 0;
@@ -72,11 +74,11 @@ html body .mySection .s-subheading {
   font-weight: 700;
   font-style: italic;
 }
-html body section#portfolio .row .card .card-body a {
+html body section#portfolyo .row .card .card-body a {
   position: relative;
   display: block;
 }
-html body section#portfolio .row .card .card-body a .ikon-kapsayici {
+html body section#portfolyo .row .card .card-body a .ikon-kapsayici {
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
   display: flex;
@@ -86,9 +88,9 @@ html body section#portfolio .row .card .card-body a .ikon-kapsayici {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: ease-in-out 0.7s;
+  transition: 0.3s;
 }
-html body section#portfolio .row .card .card-body a .ikon-kapsayici:hover {
+html body section#portfolyo .row .card .card-body a .ikon-kapsayici:hover {
   font-size: 5rem;
   opacity: 1;
 }
@@ -142,10 +144,6 @@ html body .timeline li .t-image {
   position: absolute;
   z-index: 10;
   margin-left: 0;
-  /*
-  width: $resizing;
-  height: $resizing;  
-  */
   text-align: center;
   color: white;
   border: 6px solid rgb(22, 230, 143);
@@ -157,8 +155,10 @@ html body .timeline li .t-image:last-child {
   display: flex;
   align-items: center;
 }
-html body #contact {
-  background-image: url(../../img/map.png);
+html body section#iletisim {
+  margin-top: 5rem;
+  color: white;
+  background-image: url(../../img/contact.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -166,11 +166,6 @@ html body #contact {
 
 /* ! Sitenin çeşitli genişliklerde nasıl davranacağını yazdığımız media query kısmıdır. */
 @media (max-width: 768px) {
-  header.backImage {
-    padding-top: 11rem;
-    padding-bottom: 13rem;
-  }
-  /* todo bu kısım header kısmının medium genişlikten önce nasıl davranacağı ile ilgilidir. */
   nav ul li a {
     color: black !important;
     text-align: left !important;
@@ -181,11 +176,6 @@ html body #contact {
   }
 }
 @media (min-width: 768px) {
-  header.backImage {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-  }
-  /* todo Bu kısım header kısmının medium genişlikten sonra nasıl davranacağı ile ilgilidir */
   nav ul li a {
     color: white !important;
     text-align: center;
@@ -268,6 +258,13 @@ html body #contact {
     width: 150px;
     height: 150px;
   }
+}
+@media (min-width: 992px) {
+  header.backImage {
+    padding-top: 22rem !important;
+    padding-bottom: 22rem !important;
+  }
+  /* todo Bu kısım header kısmının medium genişlikten sonra nasıl davranacağı ile ilgilidir */
 }
 @media (min-width: 1200px) {
   .timeline:before {

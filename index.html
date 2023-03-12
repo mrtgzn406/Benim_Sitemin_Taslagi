@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/Css_Files/All_css_files.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="img/apple-touch-icon.png" type="image/x-icon">
+
+    <!-- ! Bootstrap 5'in indirdiğim ilgili javascript dosya bağlantıları -->
+    <script defer src="js/Js_Files/bootstrap.bundle.js"></script>
+    <script defer src="js/Js_Files/bootstrap.bundle.js.map"></script>
+    
+    <!-- ! Kendi javascript kodlarım -->
+    <script defer src="js/Js_Files/customized.js"></script>
       
 </head>
 <body>
@@ -30,11 +37,11 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a href="#services" class="nav-link btn-close-canvas">Services</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link btn-close-canvas">Portfolio</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link btn-close-canvas">About</a></li>
-                        <li class="nav-item"><a href="#team" class="nav-link btn-close-canvas">Team</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link btn-close-canvas">Contact</a></li>
+                        <li class="nav-item"><a href="#ozelliklerim" class="nav-link btn-close-canvas">Özelliklerim</a></li>
+                        <li class="nav-item"><a href="#portfolyo" class="nav-link btn-close-canvas">Portfolyo</a></li>
+                        <li class="nav-item"><a href="#bildiklerim" class="nav-link btn-close-canvas">Bildiklerim</a></li>
+                        <!-- <li class="nav-item"><a href="#team" class="nav-link btn-close-canvas">Team</a></li> -->
+                        <li class="nav-item"><a href="#iletisim" class="nav-link btn-close-canvas">İletişim</a></li>
                     </ul>
                 </div>  
 
@@ -48,17 +55,17 @@
     <header class="backImage text-white text-center">
         <div class="container">
             <div class="backImage-sub py-5 fs-1 text-capitalize">Siteme hoş geldin<br>Tanıştığımıza Memnun Oldum</div>
-            <a href="#services" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder">Daha fazla anlat</a>
+            <a href="#ozelliklerim" class="btn btn-danger btn-lg p-lg-4  fw-bolder">DAHA FAZLA ANLAT</a>
         </div>
     </header>
     <!-- ! header end -->
 
 
-    <!-- ! services start -->
-    <section id="services" class="mySection">
+    <!-- ! ozelliklerim start -->
+    <section id="ozelliklerim" class="mySection">
         <div class="container text-center">
             <div class="text-center mb-5">
-                <h2 class="s-heading text-uppercase fw-bold">Servisler </h2>
+                <h2 class="s-heading fw-bold">ÖZELLİKLERİM</h2>
                 <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</h3>
 
             </div>
@@ -93,15 +100,15 @@
             </div>
         </div>
     </section>
-    <!-- ! services end -->
+    <!-- ! ozelliklerim end -->
 
 
-    <!-- ! portfolio start -->
-    <section id="portfolio" class="mySection">
+    <!-- ! portfolyo start -->
+    <section id="portfolyo" class="mySection">
         <div class="container text-center">
             <div class="text-center mb-5">
-                <h2 class="s-heading text-uppercase fw-bold">Portfolio </h2>
-                <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</h3>
+                <h2 class="s-heading  fw-bold">PORTFOLYOM</h2>
+                <h3 class="s-subheading text-muted">Burada şimdiye kadar yaptığım projelerim ve onlarla ilgili açıklamalar yer almaktadır. </h3>
             </div>
 
         <div class="row g-5">
@@ -225,9 +232,9 @@
 
 
     </section>
-    <!-- ! portfolio end -->
-    <!-- ! portfolio modals start -->
-<div id="portfolionun modal'ları, bu div sırf modalları vs code da kapatmak için konulmuştur. ">
+    <!-- ! portfolyo end -->
+    <!-- ! portfolyo modals start -->
+<div  > <!-- ! portfoyonun modal'ları, bu kapsayıcı div sırf modalların nereden başlayıp nerede bittiğini belirtmek için konulmuştur. -->
     <div class="modal fade modal-lg" id="project1">
         <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered modal-fullscreen-sm-down">
             <div class="modal-content">
@@ -331,14 +338,14 @@
         </div>
     </div>
 </div>
-    <!-- ! portfolio modals end -->
+    <!-- ! portfolyo modals end -->
 
 
-    <!-- ! about start -->
-    <section id="about" class="mySection">
+    <!-- ! bildiklerim start -->
+    <section id="bildiklerim" class="mySection">
         <div class="container text-center">
             <div class="text-center mb-5">
-                <h2 class="s-heading text-uppercase fw-bold">Servisler </h2>
+                <h2 class="s-heading  fw-bold">BİLDİKLERİM</h2>
                 <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</h3>
 
             </div>
@@ -403,7 +410,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="t-image">
+                    <div class="t-image p-1">
                         <h4>Hâlen kendi web sitemi (bu site) geliştiriyorum.</h4>
                     </div>
                 </li>
@@ -411,17 +418,18 @@
             </ul>
         </div>
     </section>
-    <!-- ! about end -->
+    <!-- ! bildiklerim end -->
 
-    <!-- ! contact start -->
-    <section id="contact" class="mySection">
+    <!-- ! iletisim start -->
+    <section id="iletisim" class="mySection">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="s-heading text-uppercase fw-bold">İletişim</h2>
-                <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptate et deleniti fuga voluptates, eveniet neque quia nobis vitae architecto, expedita repudiandae totam quos hic odit quis, dolor iusto reiciendis?</h3>
+                <h2 class="s-heading  fw-bold">İLETİŞİM</h2>
+                <h3 class="s-subheading">Bu kısımda iletişim bilgilerim ve bana ulaşabileceğiniz form kısmı yer almaktadır.</h3>
             </div>
 
-            <form id="iletisim_formu" action="mrtgzn406@gmail.com" novalidate>
+            <form id="iletisim_formu" action="mailto:mrtgzn406@gmail.com" novalidate>
+                <!-- ! Burada novalidate yazmamızın sebebi şudur: "novalidate yazarak bu formun içindeki javascript hatalarını ben devralacağım sen dokunma" diyoruz. -->
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -447,25 +455,18 @@
                             </div>
 
                         </div>
+                        <div class="row row-cols-1 row-cols-md-2 justify-content-around g-3">
+                            <button class="fs-3 fw-bold col-md-4 p-3 btn btn-lg btn-primary" type="submit">Formu Gönder</button>
+                            <button class="fs-3 fw-bold col-md-4 p-3 btn btn-lg btn-danger" type="reset">Formu Temizle</button>
+
+                        </div>
                     </div>
 
                 </div>
             </form>
         </div>
     </section>
-    <!-- ! contact end -->
+    <!-- ! iletisim end -->
 
-    
-
-
-
-
-
-
-    <!-- ! Bootstrap 5'in indirdiğim ilgili javascript dosya bağlantıları -->
-    <script src="js/Js_Files/bootstrap.bundle.js"></script>
-    <script src="js/Js_Files/bootstrap.bundle.js.map"></script>
-    <!-- ! Kendi javascript kodlarım -->
-    <script src="js/Js_Files/customized.js"></script>
 </body>
 </html>
