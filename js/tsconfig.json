@@ -98,6 +98,11 @@
 
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+
+
+    // "rootDir": "./", 
+    "outDir": "./Js_Files",
+    // we are using these two lines of code right now, so we select them among the all .json options and copy here to use them easily. 
   }
 }
