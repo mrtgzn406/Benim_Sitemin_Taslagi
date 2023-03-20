@@ -428,36 +428,59 @@
                 <h3 class="s-subheading">Bu kısımda iletişim bilgilerim ve bana ulaşabileceğiniz form kısmı yer almaktadır.</h3>
             </div>
 
-            <form id="iletisim_formu" action="mailto:mrtgzn406@gmail.com" novalidate>
-                <!-- ! Burada novalidate yazmamızın sebebi şudur: "novalidate yazarak bu formun içindeki javascript hatalarını ben devralacağım sen dokunma" diyoruz. -->
+            <form id="iletisim_formu" class="needs-validation" action="mailto:mrtgzn406@gmail.com" novalidate>
+                <!-- ! Burada novalidate yazmamızın sebebi şudur: "novalidate yazarak bu formun içindeki javascript hatalarını ben devralacağım, html olarak sen dokunma, bunları sen doğrulama" diyoruz. -->
+                <!-- needs-validation class'ı bir bootstrap class'ı değildir, biz kendimiz yazdık. -->
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group mb-3">
-                                <label for="" class="form-label">Adınız Soyadınız</label>
-                                <input class="form-control form-control-lg" type="text">
-                                <small class="form-text">Bu kısımda harfler dışında bir şey kullanmayınız.</small>
+                                <label for="" class="form-label">Adınız
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input id="name" class="form-control form-control-lg" type="text" required>
+                                <!-- <small class="form-text">Bu kısımda harfler dışında bir şey kullanmayınız.</small> -->
+                                <div class="invalid-feedback" id="errorName"></div>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="" class="form-label">E-Postanız</label>
-                                <input type="text" class="form-control form-control-lg">
-                                <small class="form-text">E postanızı arasında @ olacak şekilde yazınız</small>
+                                <label for="" class="form-label">E-Postanız
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input id="email" type="text" class="form-control form-control-lg" required>
+                                <!-- <small class="form-text">E postanızı arasında @ olacak şekilde yazınız</small> -->
+                                <div class="invalid-feedback" id="errorEmail"></div>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="" class="form-label">Cep Telefonu </label>
-                                <input type="text" class="form-control form-control-lg">
-                                <small class="form-text">telefon numaranızı arada boşluk olmadan ve alan kodu (+90 ) olmadan yazınız</small>
+                                <label for="" class="form-label">Cep Telefonu
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input id="phone" type="text" class="form-control form-control-lg" required>
+                                <!-- <small class="form-text">telefon numaranızı arada boşluk olmadan ve alan kodu (+90 ) olmadan yazınız</small> -->
+                                <div class="invalid-feedback" id="errorPhone"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea class="form-control form-control-lg" name="" id="" cols="30" rows="13" placeholder="Eklemek İstedikleriniz" maxlength="500" minlength="100"></textarea>
+                                <label class="form-label" for="">Eklemek istedikleriniz 
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <textarea id="message" class="form-control form-control-lg"   required maxlength="500" placeholder="Bu kısma düşüncelerinizi, tavsiyelerinizi, şikayetlerinizi yazabilirsiniz" cols="30" rows="12"></textarea>
+
+                                <div class="d-flex justify-content-between invalid-feedback">
+                                    <div id="errorMessage"></div>
+                                    <div class="text-white text-end">
+                                        <span id="characterNumber">0</span>
+                                        <span> / 500</span>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
                         <div class="row row-cols-1 row-cols-md-2 justify-content-around g-3">
-                            <button class="fs-3 fw-bold col-md-4 p-3 btn btn-lg btn-primary" type="submit">Formu Gönder</button>
-                            <button class="fs-3 fw-bold col-md-4 p-3 btn btn-lg btn-danger" type="reset">Formu Temizle</button>
+                            <button id="submitBtn"  class="fs-3 fw-bold col-md-4 p-3 btn btn-lg btn-primary" type="submit">Formu Gönder</button>
+
+                            <button id="resetBtn" class="fs-3 fw-bold col-md-4 p-3 btn btn-lg btn-danger" type="reset">Formu Temizle</button>
 
                         </div>
                     </div>
