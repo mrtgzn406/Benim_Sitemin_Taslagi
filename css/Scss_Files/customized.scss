@@ -106,7 +106,7 @@ html{
             }
         }
 
-        section#portfolyo .row .card  .card-body a{
+        section#projelerim .row .card  .card-body a{
             position: relative;
             display: block;
 
@@ -141,10 +141,17 @@ html{
                 }
             }
 
-            .modal-body img{
-                display: block;
-                margin: auto;        
-            }
+            .modal-body{
+                padding: 3rem;
+                background-color: rgb(40, 9, 182);
+                color: white;
+                font-weight: 600;
+                img{
+                    display: block;
+                    margin: auto;
+                    margin-bottom: 2rem;     
+                }
+            } 
         }
         
         

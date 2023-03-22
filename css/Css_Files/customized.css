@@ -74,11 +74,11 @@ html body .mySection .s-subheading {
   font-weight: 700;
   font-style: italic;
 }
-html body section#portfolyo .row .card .card-body a {
+html body section#projelerim .row .card .card-body a {
   position: relative;
   display: block;
 }
-html body section#portfolyo .row .card .card-body a .ikon-kapsayici {
+html body section#projelerim .row .card .card-body a .ikon-kapsayici {
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
   display: flex;
@@ -90,7 +90,7 @@ html body section#portfolyo .row .card .card-body a .ikon-kapsayici {
   opacity: 0;
   transition: 0.3s;
 }
-html body section#portfolyo .row .card .card-body a .ikon-kapsayici:hover {
+html body section#projelerim .row .card .card-body a .ikon-kapsayici:hover {
   font-size: 5rem;
   opacity: 1;
 }
@@ -101,9 +101,16 @@ html body .modal .modal-dialog .modal-header .modal-title {
   flex-grow: 1;
   text-align: center;
 }
+html body .modal .modal-dialog .modal-body {
+  padding: 3rem;
+  background-color: rgb(40, 9, 182);
+  color: white;
+  font-weight: 600;
+}
 html body .modal .modal-dialog .modal-body img {
   display: block;
   margin: auto;
+  margin-bottom: 2rem;
 }
 html body .timeline {
   position: relative;
