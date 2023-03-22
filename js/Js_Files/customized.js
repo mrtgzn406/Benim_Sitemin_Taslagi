@@ -187,10 +187,10 @@ window.onresize = function(){
             myError.textContent = "Telefon numarası 0-9 arası rakamlardan başka karakter içeremez";
             return false;
         }
-        else if (myPhone.value.length < 10 || myPhone.value.length > 10) {
+        else if (myPhone.value.length < 10 || myPhone.value.length > 12) {
             myPhone.classList.remove("is-valid");
             myPhone.classList.add("is-invalid");
-            myError.textContent = "Telefon numaranızı alan kodu (+90) olmadan 10 karakter olarak giriniz";
+            myError.textContent = "Telefon numaranızı alan koduyla (+90) veya alan kodu olmadan giriniz";
             return false;
         }
         else {
