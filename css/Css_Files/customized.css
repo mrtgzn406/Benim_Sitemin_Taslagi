@@ -71,7 +71,6 @@ html body .mySection .s-heading {
 }
 html body .mySection .s-subheading {
   font-size: 2rem;
-  font-weight: 700;
   font-style: italic;
 }
 html body section#projelerim .row .card .card-body a {
@@ -130,7 +129,7 @@ html body .timeline:before {
   Yatay bir çizgi oluşturmak için yukarıdaki 3 satır kodu yazarız. */
   /* !
   transform: translate(-50%, -50%);
-  hizalamanın sol üst taraftan değil de, objenin ortasından başlamasını istiyorsak o zaman da bu transform: translate(-50%, -50%); yazarız böylece objemiz gerek x ekseninde gerekse de y ekseninde konumlandırılmaya objenin ortasını merkez kabul ederek başlar. */
+  hizalamanın sol üst taraftan değil de, objenin ortasından başlamasını istiyorsak o zaman da bu transform: translate(-50%, -50%); ifadesini yazarız böylece objemiz gerek x ekseninde gerekse de y ekseninde konumlandırılmaya objenin ortasını merkez kabul ederek başlar. */
   top: 0;
   bottom: 0;
   width: 2px;
@@ -148,19 +147,19 @@ html body .timeline li .t-panel {
   text-align: left;
 }
 html body .timeline li .t-image {
+  background-color: white;
   position: absolute;
   z-index: 10;
   margin-left: 0;
-  text-align: center;
-  color: white;
   border: 6px solid rgb(22, 230, 143);
   border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 html body .timeline li .t-image:last-child {
   background-color: rgb(67, 18, 182);
   color: rgb(243, 255, 78);
-  display: flex;
-  align-items: center;
 }
 html body section#iletisim {
   margin-top: 5rem;

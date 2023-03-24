@@ -100,7 +100,7 @@ html{
 
             .s-subheading{
                 font-size: 2rem;
-                font-weight: 700;
+                // font-weight: 700;
                 font-style: italic;
                 
             }
@@ -177,7 +177,7 @@ html{
 
                 /* !
                 transform: translate(-50%, -50%);
-                hizalamanın sol üst taraftan değil de, objenin ortasından başlamasını istiyorsak o zaman da bu transform: translate(-50%, -50%); yazarız böylece objemiz gerek x ekseninde gerekse de y ekseninde konumlandırılmaya objenin ortasını merkez kabul ederek başlar. */
+                hizalamanın sol üst taraftan değil de, objenin ortasından başlamasını istiyorsak o zaman da bu transform: translate(-50%, -50%); ifadesini yazarız böylece objemiz gerek x ekseninde gerekse de y ekseninde konumlandırılmaya objenin ortasını merkez kabul ederek başlar. */
 
                 top: 0;
                 bottom: 0;
@@ -202,20 +202,23 @@ html{
                 }
 
                 .t-image{
+                    // display: flex;
+                    // object-fit: contain;
+                    // text-align: center;
+                    background-color: white;
                     position: absolute;
                     z-index: 10;
                     margin-left: 0;
-                    text-align: center;
-                    color: white;
                     border: 6px solid rgb(22, 230, 143);
                     border-radius: 100%;
 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
                     &:last-child{
                         background-color: rgb(67, 18, 182);
                         color: rgb(243, 255, 78);
-                        display: flex;
-                        align-items: center;
                        
                     }
                 }
