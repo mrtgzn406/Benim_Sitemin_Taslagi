@@ -14,7 +14,6 @@ html{
     body{
         font-size: 1.6rem;
 
-
         nav{
             /* 
             !todo nav (menü) kısmı başlangıç */
@@ -76,15 +75,41 @@ html{
         
         header.backImage {
             /* todo header kısmı başlangıç*/
-
-            background-image: url(../../img/header.jpeg);
+            background-image: url(../../img/kapak_resmi7_2.jpg);
             background-repeat: no-repeat;
             background-attachment: scroll;
             background-position: center;
             background-size: cover;
-
+            // height: 100vh;
+            // bu height: özelliğine 100vh yazarak, header kısmınınnın yüksekliğini kullanıcının tarayıcıdaki yükseklik kadar olmasını sağladık, 100vh viewport'un yüksekliğinin %100'ünü al demektir, eğer 87vh yazsaydık o zaman da viewport yüksekliğinin %87'sini al demek olacaktı. Lakin böyle viewport'a bağlı olarak yükseklik değeri vermek kullanıcı tarayıcıyı dikey olarak küçülttüğünde sorun çıkarır. O yüzden sabit bir değer vermek daha mantıklıdır.
+            height: 85rem; 
             padding-top: 15rem;
             padding-bottom: 15rem;
+            .kapsayici{
+                @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Marck+Script&family=Roboto:ital,wght@0,500;1,500&display=swap');
+                width: 40%;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+
+                .giris{
+                    color: rgb(0, 9, 90);
+                    font-size: 3rem;
+                    @media (min-width: 992px){
+                        font-size: 4rem;
+                    }
+                }
+                .aciklama{
+                    // color: chartreuse;
+                    // color: springgreen;
+                    color: rgb(6, 64, 150);
+                    font-size: 2rem;
+                    @media (min-width: 992px){
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+
         }
 
         
@@ -153,6 +178,7 @@ html{
                 }
             } 
         }
+        
         
         
 
@@ -359,7 +385,7 @@ html{
         padding-top: 22rem !important;
         padding-bottom: 22rem !important;
     }
-    /* todo Bu kısım header kısmının medium genişlikten sonra nasıl davranacağı ile ilgilidir */
+    /* todo Bu kısım header kısmının xl genişlikten sonra nasıl davranacağı ile ilgilidir */
 }
 
 @media (min-width: 1200px){

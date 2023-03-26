@@ -53,13 +53,39 @@ html body nav.mobil_versiyon .site_icon {
 }
 html body header.backImage {
   /* todo header kısmı başlangıç*/
-  background-image: url(../../img/header.jpeg);
+  background-image: url(../../img/kapak_resmi7_2.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
+  height: 85rem;
   padding-top: 15rem;
   padding-bottom: 15rem;
+}
+html body header.backImage .kapsayici {
+  @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Marck+Script&family=Roboto:ital,wght@0,500;1,500&display=swap");
+  width: 40%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+html body header.backImage .kapsayici .giris {
+  color: rgb(0, 9, 90);
+  font-size: 3rem;
+}
+@media (min-width: 992px) {
+  html body header.backImage .kapsayici .giris {
+    font-size: 4rem;
+  }
+}
+html body header.backImage .kapsayici .aciklama {
+  color: rgb(6, 64, 150);
+  font-size: 2rem;
+}
+@media (min-width: 992px) {
+  html body header.backImage .kapsayici .aciklama {
+    font-size: 2.5rem;
+  }
 }
 html body .mySection {
   padding: 6rem 0;
@@ -270,7 +296,7 @@ html body section#iletisim {
     padding-top: 22rem !important;
     padding-bottom: 22rem !important;
   }
-  /* todo Bu kısım header kısmının medium genişlikten sonra nasıl davranacağı ile ilgilidir */
+  /* todo Bu kısım header kısmının xl genişlikten sonra nasıl davranacağı ile ilgilidir */
 }
 @media (min-width: 1200px) {
   .timeline:before {
