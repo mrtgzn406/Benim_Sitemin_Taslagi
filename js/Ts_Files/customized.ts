@@ -48,6 +48,40 @@ for (let i = 0; i < canvas_butonlari.length; i++) {
 // * Bu sayede sitemizin menüsü mobil görünüme geçince ve biz oradan herhangi bir butona basınca, offcanvas'ı kapatmak için tekrar sağ üstte oluşturduğumuz kapat butonuna basmak zorunda değiliz. Biz mobil görünümde menüdeki herhangi bir butona "click" olayını gerçekleştirdiğimizde sağ üstteki çarpı işaretiyle yaptığımız kapat butonu da otomatik çalıştırılıyor, böylelikle mobil menüdeki butonlara hernangi bir tıklama yaptığımızda hem butonla bağlantılı sayfa açılıyor hem de offcanvas kapanıyor. yani menü gidiyor. */
 
 // ************************************************************************************************
+/* Menüde yer alan tüm bağlantıların target="_self" özelliğiyle,
+  kalan diğer tüm bağlantıların target="_blank" özelliğiyle açılması */
+
+let butunButonlar = document.getElementsByTagName("a");
+
+for (let i = 0; i < butunButonlar.length; i++) {
+    butunButonlar[i].setAttribute("target", "_blank");
+}
+
+
+
+let menuButonlari = document.getElementById("mainNavbar").getElementsByTagName("a");
+
+// ? burada ise bir htmlCollections nesnesini kaç farklı döngüyle alabiliriz onu test ettik,
+// ? tüm testler yukarıdaki "let menuButonlari" değişkeni baz alınarak yapılmıştır.
+
+// todo 1. Yöntem
+// for (let i = 0; i < menuButonlari.length; i++){
+//     menuButonlari[i].setAttribute("target","_self");
+
+// }
+
+// todo 2. Yöntem
+// for (const i in menuButonlari) {
+//     menuButonlari[i].setAttribute("target", "_self");
+// }
+
+// todo 3. Yöntem
+
+for (const eleman of menuButonlari) {
+    eleman.setAttribute("target", "_self");
+}
+
+// ************************************************************************************************
 
 
 
@@ -296,3 +330,7 @@ window.onresize = function(){
 
     
 })();
+
+function forEach(arg0: (eleman: any) => void) {
+    throw new Error("Function not implemented.");
+}

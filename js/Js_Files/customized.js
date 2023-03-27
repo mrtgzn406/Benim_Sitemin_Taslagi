@@ -35,6 +35,28 @@ for (let i = 0; i < canvas_butonlari.length; i++) {
 // * Bu kodları ise şunun için yazdık: Hatırlıyorsak index.html sayfası üzerinden sitenin en üstündeki menüyü bir bootstrap bileşeni olan "offcanvas" ın içinde yaptık. "offcanvas" kullanmamızın sebebi ise sitemizin mobil genişliğe göre veya masaüstü genişliğpe göre farklı bir menüyü hızlıca oluşturabilmekti. Gelelim asıl meseleye, bildiğimiz üzere offcanvas bileşeni yazdığımız çeşitli bootstrap class'ları sayesinde mobil görünmündeki menüyü bize getirince ve biz o menüden bir butona basılınca butondaki ilgili bağlantı yeri açılıyordu, bu ksıımda bir sorun yok fakat ilgili bağlantının butonuna tıkladığımda hem sayfa açlsın hem de o an görünen "offvanvas" bileşeni kaldırılsın istiyoruz. Bunu yapmak için yukarıdaki kodları yazmalı ve offcanvas'ı kapatmaya yarayan o 'data-bs-dismiss="offcanvas" ismindeki kapatma butonunaa basılması gerektiğini söylemeliyiz. 
 // * Bu sayede sitemizin menüsü mobil görünüme geçince ve biz oradan herhangi bir butona basınca, offcanvas'ı kapatmak için tekrar sağ üstte oluşturduğumuz kapat butonuna basmak zorunda değiliz. Biz mobil görünümde menüdeki herhangi bir butona "click" olayını gerçekleştirdiğimizde sağ üstteki çarpı işaretiyle yaptığımız kapat butonu da otomatik çalıştırılıyor, böylelikle mobil menüdeki butonlara hernangi bir tıklama yaptığımızda hem butonla bağlantılı sayfa açılıyor hem de offcanvas kapanıyor. yani menü gidiyor. */
 // ************************************************************************************************
+/* Menüde yer alan tüm bağlantıların target="_self" özelliğiyle,
+  kalan diğer tüm bağlantıların target="_blank" özelliğiyle açılması */
+let butunButonlar = document.getElementsByTagName("a");
+for (let i = 0; i < butunButonlar.length; i++) {
+    butunButonlar[i].setAttribute("target", "_blank");
+}
+let menuButonlari = document.getElementById("mainNavbar").getElementsByTagName("a");
+// ? burada ise bir htmlCollections nesnesini kaç farklı döngüyle alabiliriz onu test ettik,
+// ? tüm testler yukarıdaki "let menuButonlari" değişkeni baz alınarak yapılmıştır.
+// todo 1. Yöntem
+// for (let i = 0; i < menuButonlari.length; i++){
+//     menuButonlari[i].setAttribute("target","_self");
+// }
+// todo 2. Yöntem
+// for (const i in menuButonlari) {
+//     menuButonlari[i].setAttribute("target", "_self");
+// }
+// todo 3. Yöntem
+for (const eleman of menuButonlari) {
+    eleman.setAttribute("target", "_self");
+}
+// ************************************************************************************************
 // Bu kısımda ise .t-image class'lı resim kapsayıcısı olan div etiketlerine tarayıcı penceresinin genişliğine göre değişken değerler vermeye çalışıyoruz. Bunu media query kullanmadan sadece javascript ile yapmayı denedik, lakin araştırmalarımız sonucunda bu işlemi yapmanın daha kolay ve daha kısa bir yolunu bulup scss dosyasından yaptık.O yüzden bu kodları yoruma aldık. 
 /*
 var genislik = window.innerWidth;
@@ -247,3 +269,6 @@ window.onresize = function(){
         }
     }, false);
 })();
+function forEach(arg0) {
+    throw new Error("Function not implemented.");
+}
