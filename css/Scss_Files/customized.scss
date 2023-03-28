@@ -1,5 +1,6 @@
 /* todo  Genel tüm sayfaya uygulanan css kodları başlangıç*/
 
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Marck+Script&family=Roboto:ital,wght@0,500;1,500&display=swap');
 
 *{
     box-sizing: border-box;
@@ -89,7 +90,6 @@ html{
                 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Marck+Script&family=Roboto:ital,wght@0,500;1,500&display=swap');
                 width: 40%;
                 text-align: center;
-                font-family: 'Roboto', sans-serif;
                 font-weight: bold;
 
                 .giris{
@@ -187,20 +187,20 @@ html{
             position: relative;
             padding: 0;
             list-style: none;
-        
+            
             &:before{
                 position: absolute;
                 content: "";
                 /* left: $resizing / 2; 
                 Bu ifadeyi sadece sembolik olarak yazdık, böylece bizim Scss dosyasının  içinde kullandığımız $resizing parametresine sahip @mixin fonksiyonunun sitemizin hangi bölümlerini etkilediğini net olarak görebileceğiz. Velhasıl kelam , bu yoruma alınmış $resizing ifadesi fonksiyonun bu seçiciyi de etkilediğini gösterir, nerede yoruma alınmış bir resizing ifadesi görürsek oraya Scss aracılığıyla Css'ten müdahale edilmiş demektir.*/
                 background-color: rgb(192, 192, 192);
-
+                
                 /* !
                 left: 0;
                 right: 0;
                 height: 2px;
                 Yatay bir çizgi oluşturmak için yukarıdaki 3 satır kodu yazarız. */
-
+                
                 /* !
                 transform: translate(-50%, -50%);
                 hizalamanın sol üst taraftan değil de, objenin ortasından başlamasını istiyorsak o zaman da bu transform: translate(-50%, -50%); ifadesini yazarız böylece objemiz gerek x ekseninde gerekse de y ekseninde konumlandırılmaya objenin ortasını merkez kabul ederek başlar. */
@@ -213,18 +213,26 @@ html{
             }
             li {
                 /*  margin-bottom: $resizing / 2; */
-
+                
                 &::after,
                 &::before{
                     display: table; 
                     content: "";
                 }
-               
-
+                
+                
                 .t-panel{
                     /* padding: 0 calc($resizing / 5) 0  calc($resizing + ($resizing * 0.20)); */
                     text-align: left;
+                    .t-body{
+                        font-family: 'Roboto', sans-serif;
+                        border: 3px solid rgb(60, 12, 194);
+                        border-radius: 2rem;
+                        padding: 2rem;
+                        background-color: rgb(235, 229, 175);   
+                        // background-color: bisque;   
 
+                    }
                 }
 
                 .t-image{
@@ -237,7 +245,6 @@ html{
                     margin-left: 0;
                     border: 6px solid rgb(22, 230, 143);
                     border-radius: 100%;
-
                     display: flex;
                     align-items: center;
                     justify-content: center;

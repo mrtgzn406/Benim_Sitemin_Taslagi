@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* todo  Genel tüm sayfaya uygulanan css kodları başlangıç*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Marck+Script&family=Roboto:ital,wght@0,500;1,500&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -66,7 +67,6 @@ html body header.backImage .kapsayici {
   @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Marck+Script&family=Roboto:ital,wght@0,500;1,500&display=swap");
   width: 40%;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 html body header.backImage .kapsayici .giris {
@@ -171,6 +171,13 @@ html body .timeline li::after, html body .timeline li::before {
 html body .timeline li .t-panel {
   /* padding: 0 calc($resizing / 5) 0  calc($resizing + ($resizing * 0.20)); */
   text-align: left;
+}
+html body .timeline li .t-panel .t-body {
+  font-family: "Roboto", sans-serif;
+  border: 3px solid rgb(60, 12, 194);
+  border-radius: 2rem;
+  padding: 2rem;
+  background-color: rgb(235, 229, 175);
 }
 html body .timeline li .t-image {
   background-color: white;
