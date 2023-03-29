@@ -202,6 +202,47 @@ html body section#iletisim {
   background-attachment: scroll;
   background-position: center;
 }
+html body section#iletisim #iletisim_bilgileri {
+  border: 3px solid white;
+  margin-top: 5rem;
+  text-align: center;
+}
+html body section#iletisim #iletisim_bilgileri #genel_bilgiler {
+  height: 15rem;
+}
+html body section#iletisim #iletisim_bilgileri #genel_bilgiler table {
+  height: 100%;
+  vertical-align: middle;
+}
+html body section#iletisim #iletisim_bilgileri #genel_bilgiler table td:nth-child(2) {
+  text-align: left;
+}
+html body section#iletisim #iletisim_bilgileri #sosyal_medya {
+  height: 15rem;
+}
+html body section#iletisim #iletisim_bilgileri #sosyal_medya a {
+  text-decoration: none;
+  color: white;
+  width: 6rem;
+  height: 6rem;
+  border: 3px solid white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body section#iletisim #iletisim_bilgileri #sosyal_medya a:hover {
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+}
+html body section#iletisim #iletisim_bilgileri #sosyal_medya a i {
+  font-size: 2.5rem;
+}
+html body section#iletisim #iletisim_bilgileri #copyright {
+  padding: 1.5rem;
+  background-color: rgb(13, 31, 196);
+}
 
 /* ! Sitenin çeşitli genişliklerde nasıl davranacağını yazdığımız media query kısmıdır. */
 @media (max-width: 768px) {
@@ -238,6 +279,13 @@ html body section#iletisim {
   .timeline li .t-image {
     width: 100px;
     height: 100px;
+  }
+  #iletisim_bilgileri #sosyal_medya a {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+  #iletisim_bilgileri #sosyal_medya i {
+    font-size: 2rem !important;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {

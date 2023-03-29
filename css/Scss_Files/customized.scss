@@ -267,6 +267,56 @@ html{
             background-attachment: scroll;
             background-position: center;
 
+            #iletisim_bilgileri{
+                border: 3px solid white;
+                margin-top: 5rem;
+                text-align: center;
+                
+                #genel_bilgiler{
+                    height: 15rem;
+                    table{
+                        height: 100%;
+                        vertical-align: middle;
+                        td:nth-child(2){
+                            text-align: left;
+                        }
+                    }
+                }
+                #sosyal_medya{
+                    height: 15rem;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        width: 6rem;
+                        height: 6rem;
+                        border: 3px solid white;
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // position: relative;
+                        &:hover{
+                            color: black;
+                            background-color: white;
+                            border: 3px solid black;
+                        }
+                        
+                        i{
+                            font-size: 2.5rem;
+                            // position: absolute;
+                            // left: 50%;
+                            // top: 50%;
+                            // transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+                #copyright{
+                    padding: 1.5rem;
+                    background-color: rgb(13, 31, 196);
+                }
+
+            }
+
 
 
             
@@ -337,11 +387,22 @@ html{
        }        
     }
 }
-    
+
 
 @media(max-width: 576px){
     
     @include ortak(100px);
+
+   #iletisim_bilgileri #sosyal_medya{
+        a{
+            width: 5rem !important;
+            height: 5rem !important;
+        }
+        i{
+            font-size: 2rem !important;
+        }
+    }
+   
 
     
 }
