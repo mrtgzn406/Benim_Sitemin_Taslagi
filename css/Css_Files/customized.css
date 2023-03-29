@@ -17,7 +17,7 @@ html body nav {
   /* 
   !todo nav (menü) kısmı başlangıç */
   height: 7rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
 }
 html body nav .site_icon {
   text-decoration: none;
@@ -42,15 +42,6 @@ html body nav ul li {
 html body nav ul li a {
   letter-spacing: 0.5px;
   font-weight: bolder !important;
-}
-html body nav.mobil_versiyon {
-  background-color: rgb(0, 0, 0);
-  /* todo Bu "mobil_versiyon" class'ı normalde index.html sayfasında olmayan bir class'tır. Çünkü bu class "customized.js" sayfasında javascript kodlarıyla yazılmış koşullara göre çalışacaktır ve eğer koşul karşılanıyorsa bu class'ı nav etiketine ekleyecektir, çalışmıyorsa eklemeyecektir. Böylelikle bu class içindeki css kodları yalnızca koşulu karşılarsa nav etiketine uygulanacaktır.
-
-  ! not:  Bu class kullanıcı sayfayı aşağı kaydırır kaydırmaz normalde saydam ve siyah renkle olan menünün saydamlığını almak ve tamamen siyah bir menü bırakmak için yazılmıştır. */
-}
-html body nav.mobil_versiyon .site_icon {
-  font-size: 2rem;
 }
 html body header.backImage {
   /* todo header kısmı başlangıç*/

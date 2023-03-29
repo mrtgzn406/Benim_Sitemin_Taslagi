@@ -1,30 +1,5 @@
 "use strict";
-window.addEventListener("DOMContentLoaded", Event => {
-    function mobil_menusu() {
-        const kontrol_et = document.body.querySelector("nav");
-        if (!kontrol_et) {
-            return;
-        }
-        else if (window.scrollY === 0) {
-            kontrol_et.classList.remove("mobil_versiyon");
-        }
-        else {
-            kontrol_et.classList.add("mobil_versiyon");
-        }
-    }
-    mobil_menusu();
-    // todo buraya kadarki kodları sırf scroll biraz aşağı çekilince menümüzün o saydam siyah rengi tam siyaha dönüşsün diye yaptık. ve sırf o scroll olayıında çalışması için "customized.css" dosyasında   "mobil_versiyon" isimli bir seçiciye çeşitli özellikler yazdık. Zaten biz bu yazdığımzı javascript kodları ile de o "mobil_versiyon" isimli class'ın koşullar sağlandığında (sayfanın aşağı doğru gidildiği an) nav etiketine eklenmesini söyledik. Böylece o özellikler sadece koşul karşılandığında ilgili yere eklenecek ve çalışacaktır.
-    // -------------------------------------------------------------------------------------------
-    document.addEventListener("scroll", mobil_menusu);
-    const benim_menu = document.body.querySelector("nav");
-    if (benim_menu) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: "nav",
-            // offset: 74,
-        });
-    }
-});
-// * hatırladığımız üzere biz bu sitemizi tek sayfa halinde tasarladık, dolayısıyla sitemizdeki tüm içeriklier yukarıdan aşağıya doğru tek bir sayfada sıralanmış vaziyettedir. Ayrıca biz sitemizi çeşitli kısımlara ayırmıştık (ozelliklerim, portfolyo, bildiklerim, iletişim vb.) , şimdi istiyoruz ki kullanıcı scroll ile sayfayı aşağı kaydırıp ilgili kısma gelince o kısımla ilgili yapılmış buton (nav-link) sanki o butona hover yapıyormuşuz gibi renklensin. Bunun için hem şu yukarıdaki kodu yazmamız gerekir hem de onun üstündeki "mobil_menusu();" fonskiyonunun yazmalıyız, bu ikisi birbirleriyle bağlantılı çalışıyor.
+// buraya mümkünse menü ile ilgili bazı fonksiyonlar eklenecek
 // ************************************************************************************************
 var canvas_butonlari = document.querySelectorAll(".btn-close-canvas");
 for (let i = 0; i < canvas_butonlari.length; i++) {

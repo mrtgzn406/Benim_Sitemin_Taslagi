@@ -19,7 +19,7 @@ html{
             /* 
             !todo nav (menü) kısmı başlangıç */
             height: 7rem;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: black;
             
 
             .site_icon{
@@ -54,25 +54,6 @@ html{
 
             }
         }
-        
-
-        nav.mobil_versiyon{
-            
-            background-color: rgba(0, 0, 0, 1);
-            
-            // nav mobil versiyon başlangıç, bu kısımdaki kodlar javascript koduna göre çalışacaktır.
-
-            /* todo Bu "mobil_versiyon" class'ı normalde index.html sayfasında olmayan bir class'tır. Çünkü bu class "customized.js" sayfasında javascript kodlarıyla yazılmış koşullara göre çalışacaktır ve eğer koşul karşılanıyorsa bu class'ı nav etiketine ekleyecektir, çalışmıyorsa eklemeyecektir. Böylelikle bu class içindeki css kodları yalnızca koşulu karşılarsa nav etiketine uygulanacaktır.
-        
-            ! not:  Bu class kullanıcı sayfayı aşağı kaydırır kaydırmaz normalde saydam ve siyah renkle olan menünün saydamlığını almak ve tamamen siyah bir menü bırakmak için yazılmıştır. */
-        }
-        nav.mobil_versiyon .site_icon{
-            font-size: 2rem;
-            
-            // todo Bu kısımda ise javascript kodlarıyla şu emri verdik: Eğer sen ".site_icon" class'ı olarak, ne zaman kapsayici olarak "mobil_versiyon" class'ına sahip bir nav etiketine sahip olursan o zaman bu kodu çalıştır. 
-        }
-        
-        
         
         header.backImage {
             /* todo header kısmı başlangıç*/
@@ -404,7 +385,6 @@ html{
     }
    
 
-    
 }
 @media(min-width: 576px) and (max-width: 768px){
     
