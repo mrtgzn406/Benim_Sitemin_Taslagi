@@ -45,7 +45,7 @@ html body nav ul li a {
 }
 html body header.backImage {
   /* todo header kısmı başlangıç*/
-  background-image: url(../../img/kapak_resmi7_2.jpg);
+  background-image: url(../../img/header.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -270,6 +270,9 @@ html body section#iletisim #iletisim_bilgileri #copyright {
   .timeline li .t-image {
     width: 100px;
     height: 100px;
+  }
+  nav .site_icon {
+    font-size: 2rem !important;
   }
   #iletisim_bilgileri #sosyal_medya a {
     width: 5rem !important;

@@ -57,7 +57,7 @@ html{
         
         header.backImage {
             /* todo header kısmı başlangıç*/
-            background-image: url(../../img/kapak_resmi7_2.jpg);
+            background-image: url(../../img/header.png);
             background-repeat: no-repeat;
             background-attachment: scroll;
             background-position: center;
@@ -373,6 +373,10 @@ html{
 @media(max-width: 576px){
     
     @include ortak(100px);
+
+   nav .site_icon{
+        font-size: 2rem !important;
+    }
 
    #iletisim_bilgileri #sosyal_medya{
         a{
