@@ -60,7 +60,8 @@ html{
             background-image: url(../../img/header.png);
             background-repeat: no-repeat;
             background-attachment: scroll;
-            background-position: center;
+            background-position-x: 50%;
+            background-position-y: 50%;
             background-size: cover;
             // height: 100vh;
             // bu height: özelliğine 100vh yazarak, header kısmınınnın yüksekliğini kullanıcının tarayıcıdaki yükseklik kadar olmasını sağladık, 100vh viewport'un yüksekliğinin %100'ünü al demektir, eğer 87vh yazsaydık o zaman da viewport yüksekliğinin %87'sini al demek olacaktı. Lakin böyle viewport'a bağlı olarak yükseklik değeri vermek kullanıcı tarayıcıyı dikey olarak küçülttüğünde sorun çıkarır. O yüzden sabit bir değer vermek daha mantıklıdır.
@@ -75,19 +76,13 @@ html{
 
                 .giris{
                     color: rgb(0, 9, 90);
-                    font-size: 3rem;
-                    @media (min-width: 992px){
-                        font-size: 4rem;
-                    }
+                    font-size: 4rem;
                 }
                 .aciklama{
                     // color: chartreuse;
                     // color: springgreen;
                     color: rgb(6, 64, 150);
-                    font-size: 2rem;
-                    @media (min-width: 992px){
-                        font-size: 2.5rem;
-                    }
+                    font-size: 2.2rem;
                 }
             }
 
@@ -100,7 +95,7 @@ html{
         // ! Bütün ".mySection" class'ına sahip etiketlerine uygulanan özelliklerdir, yani kısacası bütün  "section" etiketlerine uygulanan genel özelliklerdir çünkü tüm "section" etiketlerinde ".mySection" class'ı vardır 
             .s-heading{
                 font-size: 3rem;
-                margin-top:0 ;
+                margin-top: 1rem;
                 margin-bottom: 1rem;
             }
 
@@ -359,7 +354,9 @@ html{
         li{
            margin-bottom: calc($resizing / 2);
            .t-panel{
-               padding: 0 calc($resizing / 5) 0  calc($resizing + ($resizing * 0.20));
+            // padding: 0 calc($resizing / 5) 0  calc($resizing + ($resizing * 0.20));
+            padding-left: calc($resizing + 0.5em);
+
            }
            .t-image{
                width: $resizing;
@@ -370,10 +367,41 @@ html{
 }
 
 
-@media(max-width: 576px){
+@media (max-width: 576px){
     
     @include ortak(100px);
 
+    header.backImage{
+        background-image: url(../../img/mobil_icin.png) !important;
+        background-position-x: 25% !important;
+        background-position-y: 50% !important;
+        padding-top: 50rem !important;
+        
+    }
+
+    .t-body{
+        padding: 1rem !important;
+    }
+
+    .kapsayici{
+        width: 80% !important;
+        margin: auto;
+        background-color: rgba(255, 228, 196, 0.6) !important;
+        border-radius: 3rem;
+        padding: 1rem;
+        
+        .giris{
+            color: darkcyan !important;
+            font-size: 2.6rem !important;
+        }
+        .aciklama{
+            
+            
+            color: black !important;
+            font-size: 1.8rem !important;
+        }
+    }
+    
    nav .site_icon{
         font-size: 2rem !important;
     }

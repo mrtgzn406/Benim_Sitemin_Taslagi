@@ -48,7 +48,8 @@ html body header.backImage {
   background-image: url(../../img/header.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center;
+  background-position-x: 50%;
+  background-position-y: 50%;
   background-size: cover;
   height: 85rem;
   padding-top: 15rem;
@@ -62,28 +63,18 @@ html body header.backImage .kapsayici {
 }
 html body header.backImage .kapsayici .giris {
   color: rgb(0, 9, 90);
-  font-size: 3rem;
-}
-@media (min-width: 992px) {
-  html body header.backImage .kapsayici .giris {
-    font-size: 4rem;
-  }
+  font-size: 4rem;
 }
 html body header.backImage .kapsayici .aciklama {
   color: rgb(6, 64, 150);
-  font-size: 2rem;
-}
-@media (min-width: 992px) {
-  html body header.backImage .kapsayici .aciklama {
-    font-size: 2.5rem;
-  }
+  font-size: 2.2rem;
 }
 html body .mySection {
   padding: 6rem 0;
 }
 html body .mySection .s-heading {
   font-size: 3rem;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 html body .mySection .s-subheading {
@@ -265,11 +256,35 @@ html body section#iletisim #iletisim_bilgileri #copyright {
     margin-bottom: 50px;
   }
   .timeline li .t-panel {
-    padding: 0 20px 0 120px;
+    padding-left: calc(100px + 0.5em);
   }
   .timeline li .t-image {
     width: 100px;
     height: 100px;
+  }
+  header.backImage {
+    background-image: url(../../img/mobil_icin.png) !important;
+    background-position-x: 25% !important;
+    background-position-y: 50% !important;
+    padding-top: 50rem !important;
+  }
+  .t-body {
+    padding: 1rem !important;
+  }
+  .kapsayici {
+    width: 80% !important;
+    margin: auto;
+    background-color: rgba(255, 228, 196, 0.6) !important;
+    border-radius: 3rem;
+    padding: 1rem;
+  }
+  .kapsayici .giris {
+    color: darkcyan !important;
+    font-size: 2.6rem !important;
+  }
+  .kapsayici .aciklama {
+    color: black !important;
+    font-size: 1.8rem !important;
   }
   nav .site_icon {
     font-size: 2rem !important;
@@ -290,7 +305,7 @@ html body section#iletisim #iletisim_bilgileri #copyright {
     margin-bottom: 62.5px;
   }
   .timeline li .t-panel {
-    padding: 0 25px 0 150px;
+    padding-left: calc(125px + 0.5em);
   }
   .timeline li .t-image {
     width: 125px;
@@ -333,7 +348,7 @@ html body section#iletisim #iletisim_bilgileri #copyright {
     margin-bottom: 75px;
   }
   .timeline li .t-panel {
-    padding: 0 30px 0 180px;
+    padding-left: calc(150px + 0.5em);
   }
   .timeline li .t-image {
     width: 150px;
@@ -355,7 +370,7 @@ html body section#iletisim #iletisim_bilgileri #copyright {
     margin-bottom: 85px;
   }
   .timeline li .t-panel {
-    padding: 0 34px 0 204px;
+    padding-left: calc(170px + 0.5em);
   }
   .timeline li .t-image {
     width: 170px;

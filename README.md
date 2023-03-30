@@ -1,7 +1,15 @@
 # Açıklama
 
-Bu ise benim şimdiye kadar edindiğim tüm web tasarım bilgilerimi kullandığım, bütün o bilgileri harmanlayarak meydana getirdiğim bir kişisel web sitesidir. Bu projeyi yaparken HTML, CSS, JavaScript, Sass/Scss, TypeScript, Bootstrap 5 gibi tüm web tasarımıyla âlâkalı bildiğim yazılım bilgilerimi kullandım.
+Bu proje ise benim şimdiye kadar edindiğim tüm web tasarımı bilgilerimi kullandığım, bütün o bilgileri 
+harmanlayarak meydana getirdiğim kişisel web sitemdir. Bu projeyi yaparken HTML, CSS, JavaScript, Sass/Scss, 
+TypeScript, Bootstrap 5 gibi tüm web tasarımıyla alâkalı bildiğim yazılım bilgilerimi kullandım. Proje 
+internette de yayınlanmıştır.
 
-Çok yakında bu site taslağındaki bazı hataları ve pürüzleri gidermeyi ve bu siteyi veritabanı olan, internette yayınlanmış, SSL sertifikasına da sahip bir site haline getirmeyi düşünüyorum. Nihai olarak ise yaptığım bu taslak siteyi kendime göre özelleştirip kişisel web sitem haline getirmeyi düşünüyorum.
+Bu internette yayınladığım siteyi artık yeni web sitem olarak kullanacağım için sitenin içeriğini sürekli 
+güncellemeyi, öğrendiğim yeni yazılım bilgilerini bu proje üzerinde kullanmayı düşünüyorum. En nihayetinde 
+bu siteye bir veritabanı da yapmayı ve bir web sitesinin front-end, back-end kısımlarında hangi işlemlerin 
+yapılması gerekiyorsa hepsini yapmayı hedefliyorum. Halihazırda sitemin front-end kısmını çoğunlukla bitirdim.
 
-Not: Bu site henüz inşa sürecindedir, yapımı devam etmektedir.
+Sitemin bağlantısı: https://muratgozen.netlify.app/
+
+Sitemin github repository'si: https://github.com/mrtgzn406/My_New_Site
