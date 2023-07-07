@@ -298,6 +298,3 @@ window.onresize = function(){
     
 })();
 
-function forEach(arg0: (eleman: any) => void) {
-    throw new Error("Function not implemented.");
-}

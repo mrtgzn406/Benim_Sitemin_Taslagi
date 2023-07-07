@@ -244,6 +244,3 @@ window.onresize = function(){
         }
     }, false);
 })();
-function forEach(arg0) {
-    throw new Error("Function not implemented.");
-}
