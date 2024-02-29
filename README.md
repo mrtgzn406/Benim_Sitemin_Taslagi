@@ -1,14 +1,9 @@
 # Açıklama
 
-Bu proje ise benim şimdiye kadar edindiğim tüm web tasarımı bilgilerimi kullandığım, bütün o bilgileri 
-harmanlayarak meydana getirdiğim kişisel web sitemdir. Bu projeyi yaparken HTML, CSS, JavaScript, Sass/Scss, 
-TypeScript, Bootstrap 5 gibi tüm web tasarımıyla alâkalı bildiğim yazılım bilgilerimi kullandım. Proje 
-internette de yayınlanmıştır.
+Bu proje ise benim React ve Ant Design(UI Framework) kütüphanelerini ve Single Page Application konseptini öğrenmeden önce yaptığım kişisel web sitemdir. Bu projeyi o dönem yaparken HTML, CSS, JavaScript, Bootstrap 5 gibi web tasarımıyla alâkalı bildiğim yazılım bilgilerimi kullandım. Proje internette de yayınlanmıştır.
 
-Bu internette yayınladığım siteyi artık yeni web sitem olarak kullanacağım için sitenin içeriğini sürekli 
-güncellemeyi, öğrendiğim yeni yazılım bilgilerini bu proje üzerinde kullanmayı düşünüyorum. En nihayetinde 
-bu siteye bir veritabanı da yapmayı ve bir web sitesinin front-end, back-end kısımlarında hangi işlemlerin 
-yapılması gerekiyorsa hepsini yapmayı hedefliyorum. Halihazırda sitemin front-end kısmını çoğunlukla bitirdim.
+Bu internette yayınladığım siteyi artık yeni web sitem olarak kullanacağım için sitenin içeriğini sürekli
+güncellemeyi, projeye veritabanı de eklemeyi, öğrendiğim yeni yazılım bilgilerini bu proje üzerinde kullanmayı düşünüyorum. Bu yüzden siteyi yakında React, Ant Design, mongoDB, Node.js, Express.js ile Mern Stack konseptini kullanarak yeniden yazmayı düşünüyorum.
 
 Sitemin bağlantısı: https://muratgozen.netlify.app/
 
